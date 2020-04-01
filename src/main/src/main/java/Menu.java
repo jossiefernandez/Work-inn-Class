@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Menu extends JFrame implements ActionListener {
+public class Menu extends Component implements ActionListener {
 
     JMenuBar menu;
     JMenu menu1, menu2, menu3;
@@ -12,23 +12,6 @@ public class Menu extends JFrame implements ActionListener {
     //PacienteNuevoView pacienteNuevo;
 
     public Menu() throws HeadlessException {
-        super("Prueba Barra Menu");
-        setSize(1370, 720);
-        setResizable(false);
-
-        JMenuBar barraPrueba = this.createMenuBar();
-        add(barraPrueba);
-
-        /* ---------SE PUEDE PROBAR DE ESTA MANERA PERO NO ME SIRVE MUCHO PORQUE
-        -----------YO AGREGO LA BARRA DIRECTAMENTE
-        JPanel panel = new JPanel();
-        panel.setName("panelControl");
-        panel.add(barraPrueba);
-        add(panel);
-*/
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setVisible(true);
 
     }
 
@@ -74,9 +57,6 @@ public class Menu extends JFrame implements ActionListener {
 
     }*/
     }
-
-
-    public static void main(String[] args) { Menu m = new Menu(); }
 
 }
 
